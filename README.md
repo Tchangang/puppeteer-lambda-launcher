@@ -5,12 +5,12 @@ Drive Chrome headless with Pupetteer on AWS LAMBDA. This module download and ins
 [![npm](https://img.shields.io/npm/v/@serverless-chrome/lambda.svg?style=flat-square)](https://www.npmjs.com/package/@serverless-chrome/lambda)
 
 ## Contents
-0. [General purpose](#general purpose)
+0. [General](#general)
 1. [Installation](#installation)
 2. [Setup](#setup)
 
 
-## General purpose
+## General
 This lib has been built for web scraping and automation after working 2 days on making it working on AWS lambda.
 
 ## Installation
@@ -29,7 +29,12 @@ Use in your AWS Lambda function. Requires Node 6.10.
 ```js
 let ChromeInstaller = require('@hackstudio/puppeteer-lambda-launcher')
 
-ChromeInstaller = new ChromeInstaller({ accessKeyId: 'AKIAxxxxxxxxxxxx', secretAccessKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', s3Bucket:'bucket_name_xxx', s3Key:'s3_object_name', executePath:'xxxxxxxxxxxxx'})
+ChromeInstaller = new ChromeInstaller({ 
+  accessKeyId: 'AKIAxxxxxxxxxxxx', 
+  secretAccessKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 
+  s3Bucket:'bucket_name_xxx', s3Key:'s3_object_name', 
+  executePath:'xxxxxxxxxxxxx'
+})
 
 // accessKeyId : get it from your AWS account
 // secretAccessKey : get it from your AWS account
