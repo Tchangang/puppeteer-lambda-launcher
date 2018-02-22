@@ -2,7 +2,7 @@
   "name": "@hackstudio/puppeteer-lambda-launcher",
   "version": "1.0.1",
   "description": "Launch chromium on AWS lambda and use it with Puppeteer",
-  "main": "index.js",
+  "main": "distribution/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel source --out-dir distribution --ignore source/lib --require babel-polyfill"
