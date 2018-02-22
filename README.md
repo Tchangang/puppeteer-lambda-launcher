@@ -38,7 +38,7 @@ ChromeInstaller = new ChromeInstaller({
 
 // accessKeyId : get it from your AWS account
 // secretAccessKey : get it from your AWS account
-// s3Bucket : 'bucket_name' // bucket where compressed chromium is stored. You can download it here : 
+// s3Bucket : 'bucket_name' // bucket where compressed chromium is stored. You can download it here : https://github.com/Tchangang/puppeteer-lambda-launcher/releases/tag/1.0
 // s3Key : 's3_object_name' // key to retrieve object on S3. Ex: headless-chromium.tar.gz
 // executePath : 'headless-chromium' // Name of executable path when chromium uncompressed 
 
@@ -66,5 +66,7 @@ browser = await puppeteer.launch({
 
 // Enjoy it :-)
 ```
+
+Thanks to https://github.com/sambaiz/puppeteer-lambda-starter-kit for his work.
 
 Feel free to contact me at tchangang.boris+github@gmail.com :-)
