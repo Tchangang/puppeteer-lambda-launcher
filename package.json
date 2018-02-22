@@ -1,6 +1,6 @@
 {
   "name": "@hackstudio/puppeteer-lambda-launcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Launch chromium on AWS lambda and use it with Puppeteer",
   "main": "distribution/index.js",
   "scripts": {
