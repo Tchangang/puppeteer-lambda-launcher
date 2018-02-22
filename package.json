@@ -1,6 +1,6 @@
 {
   "name": "@hackstudio/puppeteer-lambda-launcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Launch chromium on AWS lambda and use it with Puppeteer",
   "main": "index.js",
   "scripts": {
@@ -34,8 +34,7 @@
       ]
     ]
   },
-  "repository":
-  {
+  "repository": {
     "type": "git",
     "url": "https://github.com/Tchangang/puppeteer-lambda-launcher.git"
   },
