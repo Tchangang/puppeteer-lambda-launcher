@@ -1,10 +1,12 @@
 {
   "name": "@hackstudio/puppeteer-lambda-launcher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Launch chromium on AWS lambda and use it with Puppeteer",
   "main": "distribution/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "clear && eslint source --fix",
+    "lint:watch": "onchange \"source/**/*.js\" -- npm run lint",
     "build": "babel source --out-dir distribution --ignore source/lib --require babel-polyfill"
   },
   "keywords": [
@@ -42,7 +44,12 @@
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-watch": "^3.1.5",
+    "onchange": "^4.0.0"
   },
   "dependencies": {
     "aws-sdk": "^2.201.0",
