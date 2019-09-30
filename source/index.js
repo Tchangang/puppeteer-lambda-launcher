@@ -19,7 +19,11 @@ class ChromeInstaller {
       this.setupChromePath,
       executePath,
     );
-    AWS.config.update({ accessKeyId, secretAccessKey });
+    // aws keys if not provided will be picked from the system ~/.aws/credentials
+    // or if running on AWS Lambda, then from the role assigned to the function
+    if (typeof accessKeyId == 'string' && typeof secretAccessKey == 'string') {
+ 	AWS.config.update({ accessKeyId, secretAccessKey });
+    }
     this.s3 = new AWS.S3({ apiVersion: '2006-03-01' });
     this.s3Bucket = s3Bucket;
     this.s3Key = s3Key;
