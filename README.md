@@ -30,8 +30,8 @@ Use in your AWS Lambda function. Requires Node 6.10.
 let ChromeInstaller = require('@hackstudio/puppeteer-lambda-launcher')
 
 ChromeInstaller = new ChromeInstaller({ 
-  accessKeyId: 'AKIAxxxxxxxxxxxx', 
-  secretAccessKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 
+  accessKeyId: 'AKIAxxxxxxxxxxxx', 			//optional
+  secretAccessKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',    //optional
   s3Bucket:'bucket_name_xxx', s3Key:'s3_object_name', 
   executePath:'xxxxxxxxxxxxx'
 })
